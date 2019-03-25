@@ -1,0 +1,59 @@
+body{
+    text-align: center;
+    background-color: #FFDB58;
+    font-size: 24px;
+}
+
+h1, h2{
+    color: rgb(179, 44, 44);
+}
+
+img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+#burgersList{
+    display: inline-block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#burgersMenu{
+    float: left;
+}
+
+#burgersDevoured{
+    float: right;
+    right: 0;
+}
+
+li{
+    margin: 15px;
+}
+
+#burgersDevoured li{
+    background-color: gray;
+}
+
+button{
+    background-color: #3966b8;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+button:hover{
+    border-color: white;
+    border-width: 6px;
+    padding: 0;
+}
+
+#burgerText{
+    width: 30%;
+    height: 20px;
+    margin-bottom: 10px;
+}

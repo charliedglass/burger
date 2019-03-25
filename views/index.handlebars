@@ -1,0 +1,28 @@
+<h1>Eat Da Burger</h1>
+<img src = "/assets/img/burger.png" alt = "Burger">
+<br>
+<br>
+<div id = "burgersList">
+    <ol id = "burgersMenu">
+        <h2>Burgers</h2>
+        {{#each burgers}}
+            {{#unless devoured}}
+                <li>{{burger_name}} <button class = "devourBurger" data-id = {{id}}>Devour it!</button></li>
+            {{/unless}}
+        {{/each}}
+    </ol>
+    <ol id = "burgersDevoured">
+        <h2>Devoured Burgers</h2>
+        {{#each burgers}}
+            {{#if devoured}}
+                <li>{{burger_name}}</li>
+            {{/if}}
+        {{/each}}
+    </ol>
+</div>
+
+<form class = "createBurger">
+    <input type = "text" id = "burgerText" name = "burger_name">
+    <br>
+    <button type = "submit">Add a Burger</button>
+</form>
