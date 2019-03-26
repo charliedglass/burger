@@ -1,5 +1,5 @@
 var orm = require("../config/orm.js");
-
+//Uses the orm to specifically define the functions for the burgers table
 var burger = {
     selectAll: function(cb) {
         orm.selectAll("burgers", function(res){

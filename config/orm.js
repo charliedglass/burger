@@ -1,5 +1,5 @@
 var connection = require("./connection.js");
-
+//Defining generall select all, insert, and update SQL statements
 var orm = {
     selectAll: function(table, cb) {
         var queryString = "SELECT * FROM " + table +";";
@@ -56,7 +56,7 @@ var orm = {
             if (err){ 
                 throw err;
             }
-            
+
             cb(result);
         });
     }
